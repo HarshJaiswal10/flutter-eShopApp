@@ -118,6 +118,22 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                       ),
+                       SizedBox(
+                        height: 30.0,
+                      ),
+
+                      Material(  
+                        child: InkWell( child: Text(
+                            "Signup",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20),
+                          ),
+                          onTap: () => Navigator.pushNamed(
+                              context, MyRoutes.SignupRoute),
+                        ),
+                      ),
 
                       // ElevatedButton(
                       //   child: Text("Login"),
